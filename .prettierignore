@@ -1,0 +1,10 @@
+.next
+next-env.d.ts
+node_modules
+package-lock.json
+public
+.vscode
+.env
+.eslintrc.json
+README.md
+tsconfig.json
