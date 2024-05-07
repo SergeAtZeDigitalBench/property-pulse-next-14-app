@@ -1,3 +1,6 @@
+import { Suspense } from 'react'
+
+import HomeProperties from '@/components/HomeProperties'
 import InfoBoxes from '@/components/InfoBoxes'
 import Hero from '@/components/Hero'
 
@@ -6,6 +9,9 @@ const HomePage = () => {
     <>
       <Hero />
       <InfoBoxes />
+      <Suspense>
+        <HomeProperties />
+      </Suspense>
     </>
   )
 }
