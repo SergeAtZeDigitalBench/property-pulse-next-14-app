@@ -1,4 +1,4 @@
-import { type ComponentProps } from 'react'
+import type { ComponentProps } from 'react'
 import Link from 'next/link'
 
 const ProfileMenu = (props: ComponentProps<'div'>): JSX.Element => {
