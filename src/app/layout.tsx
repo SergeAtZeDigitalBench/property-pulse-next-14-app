@@ -1,8 +1,11 @@
 import { Inter } from 'next/font/google'
+import clsx from 'clsx'
+
 import type { Metadata } from 'next'
 
 import '@/assets/styles/globals.css'
 
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -30,12 +33,12 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={clsx(inter.className)}>
         <header>
           <Navbar />
         </header>
-        <main>{children}</main>
-        <footer></footer>
+        <main className="min-h-[83vh]">{children}</main>
+        <Footer />
       </body>
     </html>
   )
