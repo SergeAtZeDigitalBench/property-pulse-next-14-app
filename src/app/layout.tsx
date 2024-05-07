@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 
 import '@/assets/styles/globals.css'
 
+import Navbar from '@/components/Navbar'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -29,7 +31,9 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header></header>
+        <header>
+          <Navbar />
+        </header>
         <main>{children}</main>
         <footer></footer>
       </body>
